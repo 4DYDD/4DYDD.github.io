@@ -1,0 +1,23 @@
+
+body{
+	background: url(bgbuku.png);
+}
+
+#kepalatext {
+	font-family: Algerian;
+	font-size: 20px;
+	color: black;
+	background: floralwhite;
+	text-align: center;
+
+}
+#halamannya {
+	font-family: Berlin Sans FB;
+	font-size: 20px;
+	color: black;
+	background: whitesmoke;
+	margin: auto;
+}
+#akhirantext {
+	text-align: center;
+}
