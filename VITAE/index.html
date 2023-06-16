@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <title>VITAE SANSAN</title>
+</head>
+
+<body>
+    <audio id="backsound" src="sound/soundtrack.mp3" loop></audio>
+    <audio id="salah" src="sound/wrong.mp3"></audio>
+    <audio id="happy" src="sound/happycat.mp3"></audio>
+
+    <!-- ========== Navbar ========== -->
+
+    <nav class="navbarguweh">
+        <ul class="ulguweh">
+            <li class="libantuan" onclick="wrong()" style="flex-grow: 0.2;"><label for="bantuan" class="somting"
+                    style="cursor: pointer;"><i class="samting fa-solid fa-phone-volume"
+                        style="color: #fe6a00; font-size: 2em;"></i></label><a id="bantuan" href="#bantuan"
+                    style="text-decoration: none; color: rgb(0, 0, 0);">BANTUAN</a>
+            </li>
+            <li class="SANSAN" onclick="" style="flex-grow: 1;"><label for="sansan"
+                    onclick="sansanalert(), happy(), stop()" style="cursor: pointer;"><img src="gambar/emotMATAHARI.png"
+                        class="matahari" width="25" alt="mataharinya hilang"></label><a style="cursor: help;"
+                    onclick="sansanalert(), happy(), stop()">SANSAN</a>
+            </li>
+            <li class="liberanda" onclick="wrong()" style="flex-grow: 0.2;"><label for="rumah" class="lirumah"
+                    style="cursor: pointer;"><i class="fa-solid fa-house fa-bounce"
+                        style="color: #fe6a00; font-size: 2em;"></i></label><a id="rumah" href="#Home"
+                    style="text-decoration: none; color: rgb(0, 0, 0);">BERANDA</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ========== Navbar ========== -->
+
+    <section class="Home" id="Home">
+
+
+        <div class="kontainer">
+
+            <div class="card">
+
+                <div class="header">
+                    <i style="color: rgb(221, 48, 0);">SANSAN</i> <br>
+                    --> WANTED <-- <br>
+                </div>
+
+
+                <div class="content">
+
+                    SEKEPING ANAK MATAHARI HILANG
+
+                </div>
+
+
+                <div class="footer">
+                    --> TEMUKAN SANSAN <-- <button class="tombol" onclick="hilang(), mulai()"
+                        style="width: 10em; height: 2em; border: 2px solid #eee; font-family: 'Quicksand', sans-serif; background-color: red; border-radius: 0.5em; margin-top: 1em;">MULAI</button>
+
+                </div>
+
+            </div>
+
+
+    </section>
+
+
+
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://use.fontawesome.com/b80f593f23.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
