@@ -1,0 +1,143 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.transparent {
+    background: transparent;
+}
+
+.full--width {
+    width: 100%;
+}
+
+.seperempat--width {
+    width: 75%;
+}
+
+.text--tengah {
+    text-align: center;
+}
+
+.ketengah--kolom {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.kesesudah--kolom {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.ketengah--baris {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ketengah--sebelum {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+
+}
+
+
+
+.keterangan {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -35px;
+    filter: drop-shadow(0px 0px 2px rgb(255, 255, 255)) drop-shadow(0px 0px 3px rgb(255, 248, 195)) drop-shadow(0px 0px 2px rgb(255, 255, 255));
+    -webkit-filter: drop-shadow(0px 0px 2px rgb(255, 255, 255)) drop-shadow(0px 0px 3px rgb(255, 248, 195)) drop-shadow(0px 0px 2px rgb(255, 255, 255));
+}
+
+.header {
+    background-color: rgb(255, 201, 64);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    height: 25px;
+}
+
+.content {
+    background-color: rgb(246, 255, 82);
+    height: 50px;
+}
+
+.footer {
+    background-color: rgb(193, 159, 50);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    height: 25px;
+}
+
+.sesi--utama {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    background-color: aquamarine;
+    height: 100vh;
+}
+
+.card.utama {
+    background: url(footage/adit\ utama.jpg) no-repeat center;
+    background-size: cover;
+    width: 93%;
+    height: 95%;
+    border: 2px solid rgb(255, 233, 133);
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 4px rgb(255, 166, 0)) blur(0.2px);
+    -webkit-filter: drop-shadow(0px 0px 4px rgb(255, 166, 0)) blur(0.2px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+
+
+
+
+.sesi--kedua {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(148, 255, 132);
+    height: 100vh;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
