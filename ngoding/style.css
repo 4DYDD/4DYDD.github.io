@@ -1,0 +1,141 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: Consolas;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+body {
+    height: 100vh;
+    background-color: red;
+    transition: all 0.5s ease-in;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+}
+
+.gambarsansan {
+    transition: all 0.5s ease-in;
+    filter: drop-shadow(0px 0px 2px rgb(255, 255, 255)) drop-shadow(0px 0px 2px rgb(255, 255, 255)) drop-shadow(0px 0px 2px rgb(255, 156, 28)) drop-shadow(0px 0px 2px rgb(255, 145, 0)) !important;
+}
+
+.card {
+    transition: all 0.5s ease-in;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+
+    background-color: rgb(8, 5, 19);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px rgb(255, 134, 20);
+    border-radius: 10px;
+
+    animation: mantul 1s infinite ease-in both;
+}
+
+/* #textguweh {
+    animation: fadetext 1s infinite ease-in both;
+} */
+
+@media screen and (max-width: 476px) {
+    body {
+        background-color: rgb(24, 33, 39);
+    }
+
+    .card {
+        box-shadow: 0px 0px 10px 2px rgb(97, 39, 255) !important;
+        /* warna shadownya adalah oranye */
+    }
+
+    .gambarsansan {
+        filter: drop-shadow(0px 0px 2px rgb(62, 21, 114)) drop-shadow(0px 0px 2px rgb(62, 21, 114)) drop-shadow(0px 0px 2px rgb(255, 166, 49)) drop-shadow(0px 0px 2px rgb(255, 166, 49)) !important;
+    }
+}
+
+.putih {
+    color: rgb(255, 255, 255);
+}
+
+#textguweh {
+    position: relative;
+    color: rgb(255, 255, 255, 1);
+    animation-play-state: paused;
+}
+
+@keyframes mantul {
+    0% {
+        transform: translateY(0px) scaleX(1);
+    }
+
+    50% {
+        transform: translateY(200px) scaleX(1);
+    }
+
+    55% {
+        transform: translateY(200px) scaleX(1.2);
+    }
+
+    75% {
+        transform: translateY(40px) scaleX(0.9);
+    }
+
+    80% {
+        transform: translateY(40px);
+    }
+
+
+    100% {
+        transform: translateY(0px) scaleX(1);
+    }
+}
+
+@keyframes fadetext {
+    0% {
+        filter: blur(0);
+        color: rgb(255, 255, 255, 1);
+    }
+
+    50% {
+        filter: blur(2px);
+        color: rgb(255, 0, 0, 1);
+    }
+
+    100% {
+        filter: blur(0);
+        color: rgb(255, 255, 255, 1);
+    }
+}
+
+.header {
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    background-color: rgb(75, 38, 17);
+}
+
+.content {
+    width: 100%;
+
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(126, 61, 24);
+}
+
+.footer {
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+    background-color: rgb(41, 20, 8);
+}
