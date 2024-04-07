@@ -46,6 +46,9 @@
   function correct() {
     document.querySelectorAll('.salah').forEach(element => {
       element.style.opacity = '0';
+      setTimeout(() => {
+        element.style.display = 'none';
+      }, 500);
     });
 
     document.querySelector('.correct').style.left = '39%';
@@ -54,6 +57,9 @@
 
   function wrong(elemen) {
     elemen.style.opacity = '0';
+    setTimeout(() => {
+      elemen.style.display = 'none';
+    }, 500);
     document.querySelector('.wrong').style.left = '39%';
     document.querySelector('.correct').style.left = '-100%';
 
