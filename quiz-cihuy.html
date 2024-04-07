@@ -1,0 +1,63 @@
+<html>
+
+<head></head>
+
+<body style="font-family: UD Digi Kyokasho NP-B;">
+  <style>
+    *,
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <div style="display: flex; flex-direction: column; justify-content: center;align-items: center; gap: 20px; height: 100%;">
+    <div>SIAPA PRESIDEN KE - 8 INDONESIA ?</div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;align-items: center; width: 60vw; gap: 20px;">
+
+      <div style="background-color: wheat; width: 28vw; box-shadow: 0px 0px 3px gray; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; overflow: hidden; border-radius: 5px; transition: all 0.5s ease-in-out;" class="salah" onclick="wrong(this)">
+        <img src="https://th.bing.com/th/id/OIP.YtvX7JoUujmkVtFayr7PfgAAAA?rs=1&pid=ImgDetMain" alt="trump" width="100%" height="100">
+        <div style="display: flex;justify-content: center;align-items: center; height: 30px;">Trump</div>
+      </div>
+
+      <div style="background-color: wheat; width: 28vw; box-shadow: 0px 0px 3px gray; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; overflow: hidden; border-radius: 5px; transition: all 0.5s ease-in-out;" class="salah" onclick="wrong(this)">
+        <img src="https://th.bing.com/th/id/R.9125406e4af1f1bdb152674b3efe4f3f?rik=W4Ireij4tn%2bBlQ&riu=http%3a%2f%2fthepolitick.files.wordpress.com%2f2014%2f03%2fvladimir-putin.jpg&ehk=cCQ6C56hpyXx1PtphWdqXmCUJSHJJXZHpntjpjRtBBg%3d&risl=&pid=ImgRaw&r=0" alt="putin" width="100%" height="100">
+        <div style="display: flex;justify-content: center;align-items: center; height: 30px;">Putin</div>
+      </div>
+
+      <div style="background-color: wheat; width: 28vw; box-shadow: 0px 0px 3px gray; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; overflow: hidden; border-radius: 5px;" onclick="correct()">
+        <img src="https://th.bing.com/th/id/OIP.ZXjlIpPtwpolNx7HsBfPjQHaFj?rs=1&pid=ImgDetMain" alt="prabowo" width="100%" height="100">
+        <div style="display: flex;justify-content: center;align-items: center; height: 30px;">Prabowo</div>
+      </div>
+
+      <div style="background-color: wheat; width: 28vw; box-shadow: 0px 0px 3px gray; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; overflow: hidden; border-radius: 5px; transition: all 0.5s ease-in-out;" class="salah" onclick="wrong(this)">
+        <img src="https://th.bing.com/th/id/OIP.46Hrmw9NEj2pQ3tGV9209wHaFm?rs=1&pid=ImgDetMain" alt="xi jinping" width="100%" height="100">
+        <div style="display: flex;justify-content: center;align-items: center; height: 30px;">Xi Jinping</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="correct" style="background-color: darkgreen; color: white; padding: 20px 100px; top: 90%;left: -100%; text-align: center; position: fixed; transition: all 0.5s ease-in-out;">Benar! ✅</div>
+  <div class="wrong" style="background-color: darkred; color: white; padding: 20px 100px; top: 90%;left: -100%; text-align: center; position: fixed; transition: all 0.5s ease-in-out;">Salah! ❌</div>
+</body>
+
+<script>
+  function correct() {
+    document.querySelectorAll('.salah').forEach(element => {
+      element.style.opacity = '0';
+    });
+
+    document.querySelector('.correct').style.left = '39%';
+    document.querySelector('.wrong').style.left = '-100%';
+  }
+
+  function wrong(elemen) {
+    elemen.style.opacity = '0';
+    document.querySelector('.wrong').style.left = '39%';
+    document.querySelector('.correct').style.left = '-100%';
+
+  }
+</script>
+
+</html>
